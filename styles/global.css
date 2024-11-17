@@ -1,0 +1,195 @@
+/* General Styling */
+
+.gmail-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligne le logo et le texte à gauche */
+    padding: 10px 0; /* Garde un padding vertical approprié */
+    margin-left: -60px; /* Décale le logo vers la gauche */
+    width: 100%; /* Assure que le conteneur occupe toute la largeur disponible */
+}
+
+.gmail-logo img {
+    width: 110px!important; /* Augmente la taille du logo */
+    height: auto; /* Garde les proportions de l'image */
+    margin-right: 0px; /* Ajoute un léger espace entre le logo et le texte pour les séparer */
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+}
+
+/* Common Utility Classes */
+.material-icons {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #5f6368;
+}
+
+.main-content {
+    margin-left: 300px; /* Ajuster pour compenser la largeur de la vertical-nav et de la sidebar */
+    padding: 20px;
+    width: calc(100% - 300px); /* Ajuster la largeur pour prendre en compte la largeur totale des barres latérales */
+    background-color: #ffffff; /* Garder le contenu principal sur fond blanc */
+    border-left: none; /* Assurez-vous qu'il n'y a pas de bordure gauche */
+    margin-top: 0; /* Supprimer toute marge en haut */
+    padding-top: 0; /* Supprimer tout padding en haut */
+}
+
+.main-content header {
+    background-color: #f5f7fa; /* Utilise la même couleur que la sidebar */
+    padding: 15px 20px; /* Augmenter le padding vertical pour augmenter la hauteur du header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligner le contenu à gauche et à droite */
+    border-bottom: none; /* Supprimer la bordure en bas */
+}
+
+/* Menu Toggle Styling */
+.menu-toggle {
+    margin-left: 11px; /* Décale le menu-toggle vers la droite pour l'aligner avec Mail, Chat, Meet */
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e8f0fe; /* Pour correspondre à la couleur sélectionnée */
+}
+
+.menu-toggle .material-icons {
+    font-size: 24px;
+    color: #5f6368;
+    transition: color 0.2s;
+}
+
+.menu-toggle:hover .material-icons {
+    color: #1a73e8;
+}
+
+.compose-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c2e7ff; /* Couleur bleue plus claire qui correspond à l'image */
+    color: #000000; /* Texte en noir */
+    border: none;
+    border-radius: 16px; /* Courbure des coins */
+    padding: 18px 20px; /* Augmente le padding vertical pour augmenter la hauteur */
+    margin: 20px; /* Maintient l'espacement autour */
+    margin-left: 11px; /* Déplace légèrement le bouton vers la gauche */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+    font-weight: 550; /* Rend le texte un peu plus gras */
+}
+
+.compose-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus grande et plus nette au survol */
+}
+
+.compose-button .material-icons {
+    font-size: 23px; /* Augmentez la taille de l'icône */
+}
+
+/* tabs.css */
+
+/* Tabs Styling */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* Fond blanc pour correspondre à l'image de référence */
+    padding: 0 10px; /* Ajouter un peu de padding interne pour l'espacement horizontal */
+}
+
+.tab {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #5f6368;
+    transition: background-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacement entre l'icône et le texte */
+}
+
+.tab.active {
+    color: #1967d2; /* Couleur du texte pour l'onglet actif */
+    border-bottom: 3px solid #1a73e8; /* Bordure plus épaisse et visible */
+    font-weight: bold;
+}
+
+.tab:hover {
+    background-color: #f1f3f4; /* Fond gris clair au survol */
+}
+
+.tab-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.tab-master .mail-item-header {
+    background-color: #ffffff; /* Définit la couleur des icônes à blanc */
+}
+
+.tab .material-icons,
+.tab .material-icons-outlined {
+    font-size: 20px;
+    color: inherit; /* Utilise la même couleur que le texte du tab */
+}
+
+.unread-count,
+.new-badge {
+    background-color: #e8f0fe;
+    color: #1967d2;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.green-badge {
+    background-color: #34a853; /* Vert utilisé pour les badges des promotions */
+    color: white;
+}
+
+.orange-badge {
+    background-color: #fbbc04; /* Orange utilisé pour les badges des mises à jour */
+    color: white;
+}
+
+.blue-badge {
+    background-color: #e8f0fe; /* Bleu utilisé pour les badges des messages primaires */
+    color: #1967d2;
+}
+
+.pagination-info {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px; /* Réduit la taille de la police pour rendre le texte plus petit */
+    color: #5f6368; 
+}
+
+.pagination-info .material-icons.disabled {
+    color: #d3d3d3; /* Couleur grisée pour indiquer qu'elle est désactivée */
+    cursor: not-allowed; /* Change le curseur pour montrer que l'icône n'est pas cliquable */
+}
+
+.unread-count {
+    background-color: #d2e3fc;
+    color: #1a73e8;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: bold;
+}

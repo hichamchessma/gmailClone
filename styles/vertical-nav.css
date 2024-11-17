@@ -1,0 +1,140 @@
+/* Vertical Navigation Section Styling */
+.vertical-nav {
+    width: 68px; /* Ajuster la largeur pour qu'elle soit plus étroite comme Gmail */
+    border-right: none; /* Supprimer la bordure droite */
+    background-color: #eaf1fb; /* Fond blanc, pour correspondre à Gmail */
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    padding-top: 10px; /* Espacement en haut pour un alignement parfait */
+    margin: 0; /* Supprime toute marge */
+
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-nav .nav-item {
+    padding: 8px 0; /* Ajuste l'espacement pour aligner les icônes */
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Espacement entre l'icône et le texte */
+    transition: background-color 0.2s, border-radius 0.2s, box-shadow 0.2s;
+}
+
+.vertical-nav .nav-item a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 11px; /* Police légèrement plus petite pour correspondre à Gmail */
+    transition: color 0.2s;
+    font-weight: 500; /* Poids de police similaire à Gmail */
+}
+
+.vertical-nav .material-icons {
+    font-size: 24px;
+    color: #5f6368;
+    transition: color 0.2s;
+}
+
+.vertical-nav .nav-item:hover {
+    background-color: #e8f0fe; /* Utilise une couleur grise légère pour le hover */
+}
+
+.vertical-nav .nav-item:hover .material-icons,
+.vertical-nav .nav-item:hover a {
+    color: #1967d2; /* Bleu plus foncé pour les icônes et texte lorsqu'on survole */
+}
+
+.vertical-nav .nav-item.selected {
+    background-color: rgba(232, 240, 254, 0.6); /* Couleur bleue claire plus transparente */
+    color: #1967d2;
+    font-weight: bold;
+    border-radius: 8px; /* Border-radius réduit pour un effet moins accentué */
+    padding: 6px 10px; /* Padding réduit pour rendre l'ovale plus petit */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08); /* Ombre réduite et moins intense */
+}
+
+.vertical-nav .nav-item.selected .material-icons {
+    color: #1967d2;
+}
+
+/* Wrapper for Icon to create an oval effect */
+.icon-wrapper {
+    display: flex;
+    align-items: center; /* Centre verticalement l'icône */
+    justify-content: center; /* Centre horizontalement l'icône */
+    width: 50px; /* Ajuster la largeur pour un meilleur centrage */
+    height: 32px; /* Réduire la hauteur pour qu'elle soit plus petite */
+    background-color: #bacbe7; /* Couleur de fond bleue claire */
+    border-radius: 16px; /* Utiliser un arrondi complet pour un cercle parfait */
+    position: relative; /* Pour positionner correctement le badge */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition douce */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* Réduction de l'ombre pour moins de volume */
+}
+
+.icon-wrapper .material-icons {
+    color: #1967d2; /* Couleur de l'icône */
+    font-size: 20px; /* Ajuster la taille de l'icône pour qu'elle reste bien proportionnée */
+}
+
+.badge-wrapper {
+    position: relative;
+    left: -5px; /* Déplacer légèrement à gauche pour le badge uniquement */
+}
+
+
+/* Nav Item Selected Styling */
+.nav-item.selected .icon-wrapper {
+    background-color: rgba(232, 240, 254, 0.8); /* Légère opacité pour un effet plus doux */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'élément sélectionné */
+}
+
+/* Badge Styling */
+.badge {
+    background-color: #d93025; /* Rouge foncé comme Gmail */
+    color: white;
+    border-radius: 12px;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: -6px; /* Ajuster la position verticale pour bien centrer le badge */
+    right: -6px; /* Ajuster la position horizontale pour bien le placer */
+}
+
+.badge.red {
+    background-color: #b3261e; /* Couleur du badge rouge pour l'élément principal */
+    color: white;
+}
+
+.labels-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Labels à gauche, + à droite */
+    color: #000000;
+    margin-bottom: 10px;
+    padding-right: 10px; /* Ajuster le padding droit pour que l'icône soit bien alignée */
+    padding-left: 15px; /* Ajoute un espace à gauche pour décaler Labels vers la droite */
+
+}
+
+.labels-section {
+    margin-top: 20px; /* Ajoute un espace entre "More" et "Labels" */
+    padding: 0 10px;
+}
+
+.add-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #5f6368;
+}
+
+

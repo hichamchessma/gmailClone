@@ -1,0 +1,128 @@
+/* header.css */
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.search-bar {
+    background-color: #eaf1fb; /* Couleur de fond gris clair */
+    border-radius: 24px; /* Coins plus arrondis */
+    padding: 6px 16px; /* Ajuste le padding interne pour plus d'aération */
+    display: flex; /* Pour aligner les éléments horizontalement */
+    align-items: center; /* Centrer verticalement les icônes et le texte */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    width: 680px; /* Fixe la largeur de la barre de recherche pour la rendre moins large */
+    margin-left: -12px; /* Ajoute un léger décalage à gauche */
+}
+
+
+.search-icon {
+    color: #5f6368;
+    margin-right: 1px; /* Réduit l'espacement entre la loupe et le texte */
+    font-size: 24px; /* Augmente la taille de la loupe */
+
+}
+
+header input[type="text"] {
+    width: 500px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+}
+
+.filter-icon {
+    cursor: pointer;
+    color: #5f6368;
+    transition: color 0.3s;
+    margin-left: auto; 
+    font-size: 24px; /* Augmente la taille de la loupe */
+
+}
+
+.filter-icon:hover {
+    color: #202124;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Réduit l'espacement entre les icônes */
+    margin-left: 125px; /* Ajoute une distance entre la barre de recherche et les icônes à droite */
+
+}
+
+.header-icons .material-icons {
+    font-size: 24px;
+    cursor: pointer;
+    color: #5f6368;
+    transition: color 0.3s;
+}
+
+.header-icons .material-icons:hover {
+    color: #202124;
+}
+
+.user-status {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Réduit l'espace entre le texte "Active" et la flèche */
+    background-color: #e8f0fe; /* Couleur de fond bleue claire */
+    padding: 8px 6px; /* Réduire le padding horizontal pour diminuer la largeur du cercle */
+    border-radius: 28px; /* Augmente le rayon pour un cercle plus prononcé */
+    font-weight: 500; /* Gras moyen pour le texte */
+}
+.user-status .material-icons {
+    margin-left: -15px; /* Réduire l'espace entre "Active" et la flèche */
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #34a853; /* Vert pour 'Active' */
+}
+
+.status-dropdown {
+    -webkit-appearance: none; /* Masque la flèche sur les navigateurs WebKit */
+    -moz-appearance: none; /* Masque la flèche sur Firefox */
+    appearance: none; /* Masque la flèche sur les navigateurs supportant cette propriété */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: transparent;
+    color: #202124;
+    font-weight: 550;
+    padding-right: 20px; /* Assure l'espacement pour l'icône */
+}
+
+.user-status:hover {
+    background-color: #dce9f9; /* Couleur légèrement plus sombre pour le hover */
+}
+
+.account-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Largeur du cercle */
+    height: 30px; /* Hauteur du cercle (doit être égale à la largeur pour faire un cercle) */
+    border-radius: 50%; /* Rend le conteneur circulaire */
+    background-color: #a636d6; /* Couleur violette */
+    color: white; /* Couleur du texte (blanc) */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur de la souris en survol */
+}

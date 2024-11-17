@@ -1,0 +1,106 @@
+/* General Styling for Mail List */
+.mail-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #e0e0e0;
+}
+
+.mail-item-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f5f5f5; 
+    gap: -15px;
+}
+
+/* Mail Item Styling */
+.mail-item {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 150px 100px auto 100px;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.2s;
+    gap: 10px;
+}
+
+.mail-item:hover {
+    background-color: #f1f3f4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mail-item.selected {
+    background-color: #d2e3fc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mail-checkbox {
+    margin-right: 15px;
+}
+
+
+#select-all-checkbox {
+    width: 18px; /* Augmente la largeur si nécessaire */
+    height: 18px; /* Augmente la hauteur si nécessaire */
+    border: 2px solid #202124; /* Utilise une bordure plus épaisse pour rendre la case plus bold */
+    border-radius: 3px; /* Ajoute un léger arrondi pour un aspect similaire à Gmail */
+}
+
+#select-all-checkbox:checked {
+    background-color: #202124; /* Ajoute une couleur de fond lorsque la case est cochée */
+}
+
+
+.star-icon,
+.forward-icon {
+    font-size: 24px; /* Ajuste la taille ici si nécessaire */
+    color: #e0e0e0; /* Couleur par défaut */
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star-icon:hover,
+.star-icon.active,
+.forward-icon:hover {
+    color: #f4b400;
+}
+
+.mail-sender {
+    font-weight: bold;
+    color: #202124;
+    min-width: 150px;
+}
+
+.label {
+    background-color: #f1f3f4;
+    color: #5f6368;
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mail-subject {
+    font-weight: 500;
+    color: #3c4043;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mail-preview {
+    font-size: 13px;
+    color: #5f6368;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mail-time {
+    font-size: 12px;
+    color: #5f6368;
+    text-align: right;
+    white-space: nowrap;
+}

@@ -1,0 +1,103 @@
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    background-color: #f5f7fa;
+    border-left: none; /* Supprime toute bordure inutile qui pourrait créer l'espace */
+    padding: 0;
+    position: fixed;
+    left: 68px;
+    top: 0;
+    height: 100vh;
+    margin: 0; /* Supprime toute marge */
+
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.sidebar li {
+    padding: 6px 12px;
+    padding-left: 24px; /* Ajoutez du padding à gauche pour décaler vers la droite */
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer; 
+    position: relative;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+    font-weight: normal;
+    gap: 8px;
+}
+
+.sidebar li:hover {
+    background-color: #e8f0fe;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #202124;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.sidebar a:hover {
+    color: #1967d2;
+}
+
+.menu-item .material-icons {
+    margin-right: 8px;
+    color: #5f6368;
+    font-size: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 8px;
+    position: relative;
+}
+
+.menu-item a {
+    flex-grow: 1;
+    text-decoration: none;
+    color: #202124;
+}
+
+.menu-item .count {
+    font-size: 14px; /* Taille de la police du compteur */
+    color: #5f6368; /* Couleur grise similaire à Gmail */
+    margin-left: auto; /* Aligner le compteur à droite */
+    font-weight: normal; /* Police régulière */
+}
+
+.menu-item.selected {
+    background-color: #d0dff7; /* Applique la couleur spécifiée */
+    color: #202124; /* Ajuste la couleur du texte pour un bon contraste */
+    border-radius: 24px; /* Ajoute un arrondi pour obtenir la forme ovale */
+    padding: 10px 16px; /* Ajoute un espacement interne pour créer de l'air autour du texte */
+    margin: 8px 0;
+    font-weight: 500; /* Ajout de la police plus épaisse au texte du menu */
+
+}
+.menu-item.selected a {
+    font-weight: 500; /* Rend le texte un peu plus bold que normal */
+    color: #202124; /* Couleur sombre pour un meilleur contraste */
+}
+
+.gmail-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.gmail-logo img {
+    width: 90px;
+}
+
+
