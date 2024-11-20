@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inbox (3,526) - ammorhicham@gmail.com</title>
     <!-- Import Google Fonts for Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 
     <!-- Import Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -134,6 +135,7 @@
                     <div class="account-icon">H</div>
                 </div>
             </header>
+            <div class="main-mail-container">
             <section class="tab-master">
                 <div class="mail-item-header">
                     <input type="checkbox" id="select-all-checkbox">
@@ -153,22 +155,23 @@
             <section class="tabs">
                 <div class="tab active">
                     <span class="material-icons">inbox</span> Primary
-                    <span class="unread-count blue-badge">5</span>
                 </div>
                 <div class="tab">
                     <span class="material-icons-outlined">local_offer</span> Promotions
-                    <span class="label new-badge green-badge">1 new</span>
                 </div>
                 <div class="tab">
                     <span class="material-icons-outlined">people</span> Social
                 </div>
                 <div class="tab">
                     <span class="material-icons-outlined">info</span> Updates
-                    <span class="label new-badge orange-badge">1 new</span>
                 </div>
             </section>
             <!-- Charger la section mail-list dynamiquement -->
+            <div class="mail-list-container">
             <div id="mail-list-container"></div>
+            </div>
+        </div>
+
         </main>
     </div>
 </body>

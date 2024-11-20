@@ -20,6 +20,15 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fafafa;
+    overflow: hidden; 
+    -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+body, .mail-item, .menu-item {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px; /* Ajuste selon le besoin pour correspondre à Gmail */
+    font-weight: 500; /* Utilise 400, 500 ou 700 selon le poids désiré */
 }
 
 .container {
@@ -28,19 +37,22 @@ body {
 
 /* Common Utility Classes */
 .material-icons {
+    font-family: 'Material Icons', sans-serif;
     font-size: 20px;
     margin-right: 15px;
     color: #5f6368;
 }
 
 .main-content {
-    margin-left: 300px; /* Ajuster pour compenser la largeur de la vertical-nav et de la sidebar */
+    margin-left: 310px; /* Ajuster pour compenser la largeur de la vertical-nav et de la sidebar */
     padding: 20px;
     width: calc(100% - 300px); /* Ajuster la largeur pour prendre en compte la largeur totale des barres latérales */
-    background-color: #ffffff; /* Garder le contenu principal sur fond blanc */
+    background-color: #f5f7fa; /* Garder le contenu principal sur fond blanc */
     border-left: none; /* Assurez-vous qu'il n'y a pas de bordure gauche */
     margin-top: 0; /* Supprimer toute marge en haut */
     padding-top: 0; /* Supprimer tout padding en haut */
+
+    
 }
 
 .main-content header {
@@ -105,6 +117,10 @@ body {
     margin-bottom: 10px;
     background-color: #ffffff; /* Fond blanc pour correspondre à l'image de référence */
     padding: 0 10px; /* Ajouter un peu de padding interne pour l'espacement horizontal */
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* or #fff for white */
+    border: none; /* Removes any unwanted borders */
 }
 
 .tab {
@@ -116,12 +132,16 @@ body {
     display: flex;
     align-items: center;
     gap: 5px; /* Espacement entre l'icône et le texte */
+    margin-right: 150px; /* Ajuste cette valeur selon l'espacement souhaité */
+
 }
 
 .tab.active {
     color: #1967d2; /* Couleur du texte pour l'onglet actif */
-    border-bottom: 3px solid #1a73e8; /* Bordure plus épaisse et visible */
+    border-bottom: 3px solid #1a73e8; /* Bordure bleue en bas */
     font-weight: bold;
+    width: 10%; /* Assure que l'onglet prend toute la largeur disponible */
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
 }
 
 .tab:hover {
@@ -143,6 +163,15 @@ body {
 .tab .material-icons-outlined {
     font-size: 20px;
     color: inherit; /* Utilise la même couleur que le texte du tab */
+}
+
+
+
+.menu-item.selected {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: .875rem; /* Ajuste la taille selon ton besoin */
+    color: #1a73e8; /* Optionnel : ajuste la couleur si nécessaire */
+    font-weight: 500; /* Ajuste le poids si nécessaire */
 }
 
 .unread-count,

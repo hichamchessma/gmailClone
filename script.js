@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Select the "Inbox" tab by default
+ 
+
+       const inboxTab = document.querySelector('.menu-item:first-child'); // Update this selector as needed to match your "Inbox" item
+    if (inboxTab) {
+        inboxTab.classList.add('selected');
+    }
+
     // Toggle mail star status
     const starIcons = document.querySelectorAll('.star-icon');
     starIcons.forEach(star => {
@@ -15,8 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             mailListContainer.innerHTML = data;
 
-            // Après le chargement de la liste de mails, attacher les événements
-            
             // Handle mail selection
             const mailCheckboxes = document.querySelectorAll('.mail-checkbox');
             const selectAllCheckbox = document.getElementById('select-all-checkbox');
@@ -43,6 +49,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             });
+
+            // Use MutationObserver to observe changes
+            const observer = new MutationObserver(() => {
+                const mailItems = document.querySelectorAll('.mail-item');
+                mailItems.forEach((mail, index) => {
+                    // For demonstration, mark even-indexed mails as read
+                    if (index % 2 === 0) {
+                        mail.classList.add('read');
+                    } else {
+                        mail.classList.add('unread');
+                    }
+                });
+            });
+
+            observer.observe(mailListContainer, { childList: true, subtree: true });
         })
         .catch(error => {
             console.error('Erreur lors du chargement de la liste de mails:', error);
@@ -76,19 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
             moreMenuHeader.querySelector('a').textContent = 'More';
             moreMenuHeader.querySelector('.material-icons').textContent = 'expand_more';
         }
-    });
-
-    // Set some mails as read or unread (after mails are loaded)
-    mailListContainer.addEventListener('DOMSubtreeModified', () => {
-        const mailItems = document.querySelectorAll('.mail-item');
-        mailItems.forEach((mail, index) => {
-            // For demonstration, mark even-indexed mails as read
-            if (index % 2 === 0) {
-                mail.classList.add('read');
-            } else {
-                mail.classList.add('unread');
-            }
-        });
     });
 
     // Handle sidebar menu item selection

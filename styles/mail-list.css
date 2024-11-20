@@ -5,14 +5,11 @@
     border-top: 1px solid #e0e0e0;
 }
 
-.mail-item-header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: #f5f5f5; 
-    gap: -15px;
-}
+
+
+
+
+
 
 /* Mail Item Styling */
 .mail-item {
@@ -24,6 +21,17 @@
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.2s;
     gap: 10px;
+}
+
+.mail-item-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f7fa; 
+    border-radius: 12px 12px 0 0; /* Coins arrondis en haut à gauche et à droite */
+    margin: 0;
+    width: 100%;
+    overflow: hidden; /* Empêche tout débordement */
 }
 
 .mail-item:hover {
@@ -39,6 +47,33 @@
 .mail-checkbox {
     margin-right: 15px;
 }
+
+.main-mail-container {
+    border-radius: 12px 12px 0 0; /* Coins arrondis pour les côtés supérieur gauche et droit */
+    overflow: hidden; /* Empêche les débordements visuels */
+    border-top: 1px solid #e0e0e0; /* Ligne de démarcation similaire à Gmail */
+    background-color: #ffffff; /* Couleur de fond blanche pour correspondre au design de Gmail */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding-right: 8px; /* Adds a margin similar to Gmail */
+    box-sizing: border-box; /* Ensures padding does not increase the width */
+}
+
+
+.mail-item-header
+ {
+    margin: 0;
+}
+
+.mail-list-container {
+    max-height: 900px;
+    overflow-y: auto;
+    padding-right: 8px; /* Optionally add padding to match Gmail */
+    margin-right: 16px; /* Adjust this value as needed */
+    overflow-y: scroll; /* Ensures the scroll bar stays inside */
+}
+
+
+
 
 
 #select-all-checkbox {
