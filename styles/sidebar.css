@@ -9,6 +9,10 @@
     top: 0;
     height: 100vh;
     margin: 0; /* Supprime toute marge */
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; /* Famille de polices de Gmail */
+    font-size: .875rem; /* Correspond à Gmail */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
 
@@ -31,6 +35,8 @@
     border-radius: 4px;
     font-weight: normal;
     gap: 8px;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+
 }
 
 .sidebar li:hover {
@@ -42,6 +48,8 @@
     color: #202124;
     transition: color 0.2s;
     line-height: 1;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+
 }
 
 .sidebar a:hover {
@@ -57,15 +65,25 @@
 .menu-item {
     display: flex;
     align-items: center;
-    padding: 6px 12px;
-    gap: 8px;
+    justify-content: flex-start; /* Assure que tout est aligné à gauche */
+    padding: 8px 16px; /* Padding uniforme à gauche et à droite */
+    gap: 12px; /* Espacement uniforme entre l'icône et le texte */
     position: relative;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: .875rem;
+    color: #202124;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    border-radius: 16px; /* Coins arrondis pour tout le menu */
+    margin: 0; /* Pas de marge qui pourrait créer un décalage */
 }
 
 .menu-item a {
     flex-grow: 1;
     text-decoration: none;
     color: #202124;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+
 }
 
 .menu-item .count {
@@ -76,17 +94,20 @@
 }
 
 .menu-item.selected {
-    background-color: #d0dff7; /* Applique la couleur spécifiée */
-    color: #202124; /* Ajuste la couleur du texte pour un bon contraste */
-    border-radius: 24px; /* Ajoute un arrondi pour obtenir la forme ovale */
-    padding: 10px 16px; /* Ajoute un espacement interne pour créer de l'air autour du texte */
-    margin: 8px 0;
-    font-weight: 500; /* Ajout de la police plus épaisse au texte du menu */
-
+    background-color: #d0dff7; /* Couleur de fond pour l'élément sélectionné */
+    color: #202124; 
+    padding: 8px 24px; /* Identique au padding des éléments non sélectionnés */
+    font-weight: 600; /* Plus épais pour l'élément sélectionné */
+    border-radius: 16px; /* Coins arrondis uniformes */
+    display: flex;
+    align-items: center; 
+    gap: 12px; /* Espacement identique entre icône et texte */
+    margin: 0; /* Pas de marge */
 }
+
 .menu-item.selected a {
-    font-weight: 500; /* Rend le texte un peu plus bold que normal */
-    color: #202124; /* Couleur sombre pour un meilleur contraste */
+    font-weight: 600; /* Rend le texte un peu plus bold que normal */
+    color: #232329; /* Couleur sombre pour un meilleur contraste */
 }
 
 .gmail-logo {

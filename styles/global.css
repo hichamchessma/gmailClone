@@ -25,10 +25,13 @@ body {
 -moz-osx-font-smoothing: grayscale;
 }
 
-body, .mail-item, .menu-item {
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 14px; /* Ajuste selon le besoin pour correspondre à Gmail */
-    font-weight: 500; /* Utilise 400, 500 ou 700 selon le poids désiré */
+
+body, .mail-item, .mail-sender, .mail-subject, .mail-preview, .mail-time, .menu-item {
+    -webkit-font-smoothing: antialiased; /* Lissage de la police pour un rendu plus doux */
+    -moz-osx-font-smoothing: grayscale; /* Lissage sur les systèmes macOS */
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; /* Famille de polices de Gmail */
+    font-size: .875rem; /* Correspond à environ 14px, taille standard de Gmail */
+    letter-spacing: normal; /* Espacement normal des lettres */
 }
 
 .container {
@@ -98,6 +101,8 @@ body, .mail-item, .menu-item {
     transition: background-color 0.3s;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
     font-weight: 550; /* Rend le texte un peu plus gras */
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: .875rem;
 }
 
 .compose-button:hover {
@@ -132,7 +137,7 @@ body, .mail-item, .menu-item {
     display: flex;
     align-items: center;
     gap: 5px; /* Espacement entre l'icône et le texte */
-    margin-right: 150px; /* Ajuste cette valeur selon l'espacement souhaité */
+    width: 230px;
 
 }
 
@@ -140,7 +145,7 @@ body, .mail-item, .menu-item {
     color: #1967d2; /* Couleur du texte pour l'onglet actif */
     border-bottom: 3px solid #1a73e8; /* Bordure bleue en bas */
     font-weight: bold;
-    width: 10%; /* Assure que l'onglet prend toute la largeur disponible */
+    width: 230px; /* Assure que l'onglet prend toute la largeur disponible */
     box-sizing: border-box; /* Inclut le padding dans la largeur */
 }
 

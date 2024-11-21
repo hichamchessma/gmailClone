@@ -20,6 +20,8 @@
 
 .vertical-nav .nav-item {
     padding: 8px 0; /* Ajuste l'espacement pour aligner les icônes */
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: .875rem;
     position: relative;
     cursor: pointer;
     display: flex;
@@ -123,12 +125,17 @@
     margin-bottom: 10px;
     padding-right: 10px; /* Ajuster le padding droit pour que l'icône soit bien alignée */
     padding-left: 15px; /* Ajoute un espace à gauche pour décaler Labels vers la droite */
+    font-size: .875rem;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+
 
 }
 
 .labels-section {
     margin-top: 20px; /* Ajoute un espace entre "More" et "Labels" */
     padding: 0 10px;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+
 }
 
 .add-icon {
