@@ -46,6 +46,7 @@ body, .mail-item, .mail-sender, .mail-subject, .mail-preview, .mail-time, .menu-
     color: #5f6368;
 }
 
+
 .main-content {
     margin-left: 310px; /* Ajuster pour compenser la largeur de la vertical-nav et de la sidebar */
     padding: 20px;

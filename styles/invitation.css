@@ -1,0 +1,115 @@
+.shift-left {
+    margin-left: -20px; /* Ajustez cette valeur selon vos besoins */
+    width: 100%; /* Assurez que l'image reste bien dimensionnée */
+}
+.meeting-invitation {
+    position: relative;
+    top: -10px; /* Décale vers le haut */
+    left: 76px; /* Décale vers la gauche */
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: 1.375rem;
+    color: #1f1f1f;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "liga" 0;
+    font-variant-ligatures: no-contextual;
+}
+
+.inbox-header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.meeting-invitation p {
+    margin: 0;
+    flex-grow: 0; /* Le paragraphe prendra toute la largeur disponible, poussant l'image vers la droite */
+    margin-right: 0; /* Supprime spécifiquement la marge droite */
+    padding-right: 0;
+}
+
+.inbox-header img {
+    max-width: 700px; /* Vous pouvez ajuster la largeur de l'image selon vos besoins */
+    height: auto;
+    margin-left: 0px; /* Rapproche l'image vers la gauche, ajustez cette valeur selon vos besoins */
+    margin-top: 10px; /* Ajustez la valeur pour abaisser l'image */
+}
+
+.sender-info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Réduire l'espace entre le sujet et les détails de l'expéditeur pour mieux correspondre à l'exemple */
+    transform: translateX(-55px); /* Décaler vers la gauche de 20 pixels, ajustez la valeur selon vos besoins */
+
+}
+
+.sender-icon-header {
+    margin-left: 15px; /* Ajuste la marge selon tes besoins */
+    transform: translateX(1020px); 
+}
+
+.sender-thumb-header {
+    display: flex;
+    transform: translateX(1020px); 
+    align-items: center; /* Aligner l'image et le texte verticalement */
+
+}
+
+
+
+.thumb-header-container {
+    transform: translateY(-5px); 
+    display: flex;
+    align-items: center; /* Aligner le texte à côté de l'image */
+    gap: 5px; /* Espacement entre l'image et le texte, ajustez selon vos besoins */
+}
+
+.sender-thumb-header p {
+  
+    font-size: 11.5px;
+    color: #5f6368; /* Couleur légèrement atténuée */
+    
+}
+
+.translate-english-header {
+    display: flex;
+    transform: translateX(53px); 
+    align-items: center; /* Aligner l'image et le texte verticalement */
+
+}
+
+.sender-details {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3; /* Ajuster le line-height pour que le texte soit plus serré */
+    margin-left: 15px;
+   
+}
+
+.sender-name {
+    font-weight: 550; /* Utiliser un poids intermédiaire pour le texte, afin de mieux correspondre à l'exemple */
+    font-size: 14px;
+    color: #202124; /* Couleur légèrement grise pour correspondre à l'exemple */
+
+}
+
+.sender-email {
+    transform: translateY(4px);
+    font-size: 11.5px;
+    color: #5f6368; /* Couleur légèrement atténuée */
+}
+
+
+.sender-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Largeur du cercle */
+    height: 40px; /* Hauteur du cercle (doit être égale à la largeur pour faire un cercle) */
+    border-radius: 50%; /* Rend le conteneur circulaire */
+    background-color: #3c815b; /* Couleur violette */
+    color: white; /* Couleur du texte (blanc) */
+    font-size: 18px; /* Taille de la police */
+    cursor: pointer; /* Curseur de la souris en survol */
+}

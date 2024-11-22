@@ -5,6 +5,12 @@
     border-top: 1px solid #e0e0e0;
 }
 
+.no-truncate {
+    white-space: normal; /* Permet de ne pas tronquer le texte */
+    overflow: visible;
+    text-overflow: initial;
+}
+
 /* Mail Item Styling */
 .mail-item {
     display: grid;
@@ -91,7 +97,6 @@
 .main-mail-container {
     border-radius: 12px 12px 0 0; /* Coins arrondis pour les côtés supérieur gauche et droit */
     overflow: hidden; /* Empêche les débordements visuels */
-    border-top: 1px solid #e0e0e0; /* Ligne de démarcation similaire à Gmail */
     background-color: #ffffff; /* Couleur de fond blanche */
     overflow-y: auto; /* Permet le défilement vertical */
     padding-right: 8px; /* Ajoute une marge similaire à Gmail */

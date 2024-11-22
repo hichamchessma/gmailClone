@@ -12,12 +12,14 @@
     <!-- Import Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
     <!-- Link to CSS -->
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/mail-list.css">
     <link rel="stylesheet" href="styles/vertical-nav.css">
+    <link rel="stylesheet" href="styles/invitation.css">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -136,39 +138,45 @@
                 </div>
             </header>
             <div class="main-mail-container">
-            <section class="tab-master">
-                <div class="mail-item-header">
-                    <input type="checkbox" id="select-all-checkbox">
-                    <label for="select-all-checkbox"></label>
-                    <div class="tab-icons">
-                        <span class="material-icons">expand_more</span>
-                        <span class="material-icons">refresh</span>
-                        <span class="material-icons">more_vert</span>
+                <section class="tab-master">
+                    <div class="mail-item-header">
+                        <div class="tab-icons">
+                            <img src="images/header.png" alt="Gmail Toolbar Header" class="shift-left">
+                        </div>
                     </div>
-                    <div class="pagination-info">
-                        1-50 of 6,161
-                        <span class="material-icons disabled">chevron_left</span>
-                        <span class="material-icons">chevron_right</span>
+                </section>
+                <div class="meeting-invitation">
+                    <div class="inbox-header-container">
+                    <p>Invitation: réunion - jeu. 21 nov. 2024 15:00 - 16:00 (UTC+1) (hichamchessma@gmail.com)</p>
+                    <div class="inbox-header">
+                        <img src="images/inboxheader.png" alt="Inbox Header" class="inbox-icon">
                     </div>
                 </div>
-            </section>
-            <section class="tabs">
-                <div class="tab active">
-                    <span class="material-icons">inbox</span> Primary
+                <div class="sender-info">
+                    <div class="sender-avatar">
+                        h
+                    </div>
+                    <div class="sender-details">
+                        <p class="sender-name">Hicham Ammor</p>
+                        <p class="sender-email">to me</p>
+                    </div>
+                    <div class="sender-thumb-header">
+                        <div class="thumb-header-container">
+                            <img src="images/thumbheader.png" alt="thumb Header" class="thumb-header">
+                            <p>21 Nov 2024, 13:03 (16 hours ago)</p>
+                        </div>
+                    </div>
+                    <div class="sender-icon-header">
+                        <img src="images/iconesheader.png" alt="Icone Header" class="icon-header">
+                    </div>
                 </div>
-                <div class="tab">
-                    <span class="material-icons-outlined">local_offer</span> Promotions
+                <div class="sender-info">
+                    <div class="translate-english-header">
+                        <img src="images/translateenglish.png" alt="Icone Header" class="icon-header">
+                    </div>
                 </div>
-                <div class="tab">
-                    <span class="material-icons-outlined">people</span> Social
-                </div>
-                <div class="tab">
-                    <span class="material-icons-outlined">info</span> Updates
-                </div>
-            </section>
-            <!-- Charger la section mail-list dynamiquement -->
-            <div class="mail-list-container">
-            <div id="mail-list-container"></div>
+            </div>
+                
             </div>
         </div>
 
